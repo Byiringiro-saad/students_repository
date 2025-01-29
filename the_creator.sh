@@ -8,5 +8,7 @@ cd students_directory
 COHORTS=("cohort1.txt" "cohort2.txt" "cohort3.txt" "cohort4.txt" "cohort5.txt")
 for file in "${COHORTS[@]}"; do
 	touch "$file"
+	echo -e "saad \n merci \n nayituriki" >> "$file"
 	echo "Created file: $file"
+	cat "$file"
 done
